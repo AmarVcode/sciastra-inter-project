@@ -1,2 +1,0 @@
-# sciastra-inter-project
- 
