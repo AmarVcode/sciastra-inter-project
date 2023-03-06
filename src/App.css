@@ -8,10 +8,14 @@
 header {
     color: white;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+    
 }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+        
 
 .logo{
     width: 4rem;
@@ -24,14 +28,13 @@ header {
 
 .logo img{
     width:100%;
-    transform: scale(1.5);
-    opacity: 50%;
 }
 
 nav {
     color: white;
     display: flex;
     width: 100%;
+    
 }
 
 nav a{
@@ -41,4 +44,122 @@ nav a{
     font-size: .9rem;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+nav a:hover{
+    color: purple;
+}
+
+.menu{
+width: 1.5rem;
+border: none;
+background-color: transparent;
+position: absolute;
+right: 20px;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+.manu svg{
+    width: 100%;
+}
+
+@media (max-width:820px) {
+    html{
+        font-size: 16px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 100%;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        background: linear-gradient(140deg,midnightblue,purple);
+        transform: scale(1,0);
+        transform-origin: top;
+    }
+
+    .letshow{
+        transform: scale(1,1);
+    }
+
+    .menu{
+        display: block;
+    }
+.content{
+    margin-top: 0px !important;
+}
+}
+
+
+.content{
+    width: 100%;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    padding: 1em;
+}
+
+.content h2{
+    font-size: 3rem;
+ 
+}
+
+.content p{
+    font-size: 1.4rem;
+}
+.content button{
+    font-size: .9rem;
+    padding: .3em;
+    margin-top: 2em;
+    background-color: #212529;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    /* border: 2px solid transparent; */
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.content button:hover{
+    border: 2px solid #5a6168 !important;
+    
+
+}
+
+.head{
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right , midnightblue, purple);
+    background-clip: text;
+    padding: 1em;
+    font-size: 2.4rem;
+}
+
+
+.boxflex{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.info{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background:linear-gradient(140deg,midnightblue,purple);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: .5em;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.info h5{
+    font-weight: normal;
+}
+
+.imgdiv img{
+width: 100%;
 }
