@@ -38,16 +38,21 @@ nav {
 }
 
 nav a{
-    color: white;
+    color: transparent;
     text-decoration: none;
     padding: 1em;
     font-size: .9rem;
     text-transform: uppercase;
     font-weight: 400;
+    background-clip: text !important;
+    background: linear-gradient(to right,white, midnightblue,purple);
+    background-position: left;
+    background-size: 400%;
 }
 
 nav a:hover{
-    color: purple;
+background-position: right;
+text-decoration: underline !important;
 }
 
 .menu{
@@ -92,7 +97,7 @@ display: none;
 
 
 
-.box1{
+.box1,.box2{
     grid-template-columns: 100% !important;
 }
 
@@ -203,4 +208,204 @@ width: 100%;
 width: 10rem;
 position: absolute;
 right: 0;
+}
+
+.cardinfo{
+    width: 400px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);
+    margin:1em;
+    padding: 1em;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: center;
+    min-height: 350px;
+    background: linear-gradient(to top, purple,white, white );
+}
+
+.proimg>div:nth-child(1){
+    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+.proimg img{
+    width: 100%;
+}
+
+.contentimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.contentimg p{
+    font-family: cursive;
+    color: transparent;
+    background:linear-gradient(to top,midnightblue,purple);
+    background-clip: text;
+    padding: .5em;
+    font-size: 1.3rem;
+}
+
+.contentimg h5{
+    color: RED;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contentimg a{
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+    border-radius: 15px;
+    padding: .2em;
+    margin: 1em;
+}
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background: linear-gradient(to right,midnightblue,purple);
+    color: white;
+    text-align: center;
+    
+}
+
+.block h2{
+    font-size: 2.3rem;
+}
+
+.block >div{
+    padding: 3em 1em;
+    width: 200px;
+}
+
+
+.box2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+.box2 video,img,iframe{
+width: 100%;
+border: none;
+}
+
+.box2 iframe{
+min-height: 350px;
+box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.445);
+}
+
+.box2 p{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+}
+
+.btn1{
+    width: 100%;
+    padding: .7em;
+    font-size: 1rem;
+    margin: .5em;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn2{
+    border: 2px solid midnightblue !important;
+    background-color: transparent;
+}
+
+.box3{
+    text-align: center;
+    padding: 1em;
+}
+
+.box3 p{
+    color: grey;
+}
+
+.mini{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin:1em;
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.459);
+    border-radius: 10px;
+}
+
+.white{
+    background: linear-gradient(to left,midnightblue,purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1.5em;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.white h5{
+    font-weight: 500;
+}
+
+.flexmini{
+    padding: 1em;
+
+}
+
+.flexmini h5{
+    font-size: 1rem;
+    font-weight: normal;
+    padding: .2em;
+}
+
+.btnred{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: .3em;
+    border-radius: 5px;
+}
+
+.striked{
+text-decoration: line-through;
+font-weight: normal;
+}
+
+.colored{
+    color: midnightblue;
+}
+
+.flexmini a{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.btnmain{
+    border: 1px solid midnightblue;
+    color: midnightblue;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: .8em 3em;
+    border-radius: 40px;
+
+}
+
+footer{
+    color:white;
+    background-color: black;
 }
