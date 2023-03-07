@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Appheader from './component/header/Header';
 import Maincontent from './component/maincontent/Main';
@@ -8,11 +9,13 @@ import Appfooter from './component/Footer'
 function App() {
 
   return (
-    <div>
+    <Router>
+      <Switch>
 <Appheader />
-<Maincontent />
+<Route exact path="/" component={<Maincontent />} />
 <Appfooter /> 
-    </div>
+</Switch>
+    </Router>
   )
 }
 
