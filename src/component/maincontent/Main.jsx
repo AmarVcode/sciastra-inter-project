@@ -49,12 +49,12 @@ Building the scientists of tomorrow!
 
 <div className="box1">
   <div>
-  <video style="border-radius: 1rem;" controls="" muted="" loop="" autoplay="" width="700" height="100%">
+  <video controls  playsInline="" autoPlay={true} muted="" loop={true}>
                                     <source src="https://sciastra.com/files_upload/svg.mp4" type="video/mp4" />
                                 </video>
   </div>
   <div>
-<h2 className='head'>
+<h2 className="head exc">
 Sourav Ganguly 's Message
 </h2>
 <p>
@@ -65,8 +65,43 @@ A good teacher is like a candle, it consumes itself to light the way for others
 
 
 
-
-
+<img className='rocket' src="https://www.sciastra.com/rocket.png" alt="" />
+<div className="boxflex">
+<div className='cardinfo'>
+  <div className='proimg'>
+    <div>
+      <img src="https://www.sciastra.com/Admin/Homepage/Student_Rank/Uploaded_image/16665584071-removebg-preview.png" alt="" />
+    </div>
+    <div>Adarsh V</div>
+  </div>
+  <div className='contentimg'>
+    <p>
+    Congratulations!
+    </p>
+    <h5>
+    AIR-1 (IAT) AIR-15 (NEST)
+    </h5>
+  </div>
+</div>
+<div className='cardinfo'>
+  <div className='proimg'>
+    <div>
+      <img src="https://www.sciastra.com/Admin/Homepage/Student_Rank/Uploaded_image/1666396377image_2_-removebg-preview.png" alt="" />
+    </div>
+    <div>
+Dhirtiraj Bastav
+</div>
+  </div>
+  <div className='contentimg'>
+    <p>
+    Congratulations!
+    </p>
+    <h5>
+    Rank-1 (Assam board)
+    </h5>
+  </div>
+</div>
+</div>
 
 
 

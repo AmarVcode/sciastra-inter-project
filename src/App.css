@@ -89,6 +89,13 @@ display: none;
 .content{
     margin-top: 0px !important;
 }
+
+
+
+.box1{
+    grid-template-columns: 100% !important;
+}
+
 }
 
 
@@ -162,4 +169,38 @@ justify-content: center;
 
 .imgdiv img{
 width: 100%;
+}
+
+.box1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box1 video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box1 > div{
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.box1 p{
+    color: rgba(0, 0, 0, 0.829);
+    font-weight: 300;
+}
+.exc{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.rocket{
+width: 10rem;
+position: absolute;
+right: 0;
 }

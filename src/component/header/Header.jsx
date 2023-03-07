@@ -5,7 +5,7 @@ const header = () => {
   return (
     <header>
       <Navbar />
-      <video  class="mainbg" playsinline="" autoplay="" muted="" loop="">
+      <video  className="mainbg" playsInline="" autoPlay="" muted="" loop="">
                 <source src="https://www.sciastra.com/video_2023-02-23_19-22-35.mp4" type="video/webm" />
             </video>
 
