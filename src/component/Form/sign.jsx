@@ -20,6 +20,18 @@ const getotp=()=>{
   const handleSubmit = (event) => {
     event.preventDefault();
     if(otp == random){
+let local = localStorage.getItem("userdata")|| "[]";
+local=JSON.parse(local);
+let data = {
+  Email: email,
+  Password: password
+};
+local.push(data);
+local=JSON.stringify(local);
+
+localStorage.setItem("userdata",local);
+
+
         alert("Login Succesfully");
         window.location.href='/'
     }
