@@ -8,6 +8,9 @@
 header {
     color: white;
     width: 100%;
+    background: url("./images/bg-sci.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
     .grid{
